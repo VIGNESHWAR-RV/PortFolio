@@ -1,0 +1,408 @@
+#contactMe{
+    height:100vh;
+    width:100%;
+    background:red;
+    transition: all 0.45s ease-in-out;
+    z-index: 2;
+}
+::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+    color: red;
+    opacity: 1; /* Firefox */
+}
+  
+:-ms-input-placeholder { /* Internet Explorer 10-11 */
+    color: red;
+}
+  
+::-ms-input-placeholder { /* Microsoft Edge */
+    color: red;
+}
+
+.formHeading{
+    margin-top: 12vh;
+    font-family: 'Zen Tokyo Zoo', cursive;
+    font-size: 3vmax;
+    text-align: center;
+}
+.formDiv{
+    display: grid;
+    justify-items: center;
+}
+.inputs{
+    margin:6% 0%;
+    padding:4% 2%;
+    font-size: 2vmin;
+    font-family: 'Fredoka', sans-serif;
+    width:20vw;
+    color: red;
+    border-radius: 1vmax;
+    border:1px solid black;
+}
+.textArea{
+    margin: 6% 0%;
+    padding: 3% 2%;
+    width: 20vw;
+    height:15vh;
+    font-size: 2vmin;
+    font-family: 'Fredoka', sans-serif;
+    color: red;
+    border-radius: 1vmax;
+    border:1px solid black;
+}
+.submitButton{
+    margin: 3% 0%;
+    padding: 1% 2%;
+    width: 20vw;
+    color: white;
+    font-family: 'Rampart One', cursive;
+    font-size: 1.75vmax;
+    text-transform: uppercase;
+    border-radius: 3vmax;
+    border:none;
+    transition: all 0.3s ease-in-out;
+    background:red;
+    cursor: pointer;
+}
+.submitButton:hover{
+    color:black;
+    transform: scale(1.1);
+}
+.grids{
+    width:100%;
+    height:100%;
+    overflow: hidden;
+}
+.contactInfo{
+    margin-top: 10vh;
+    display: grid;
+    justify-items: start;
+}
+.quote{
+    color: black;
+    font-family: 'Rampart One', cursive;
+    font-size: 2.5vmax;
+    text-align: center;
+    margin: auto;
+}
+.quote span{
+    color:white;
+    text-transform: capitalize;
+}
+
+.headingMe{
+font-family: 'Zen Tokyo Zoo', cursive;
+color:black;
+font-size: 3.6vmax;
+margin-left: 1%;
+animation: slideLeft 1.4s ease-in-out;
+}
+.headingMe>span{
+    color:white;
+}
+.contactLinks{
+    display: flex;
+    width:45%;
+    justify-content: center;
+}
+.grids button{
+    background-color: transparent;
+    font-family: 'Vujahday Script', cursive;
+    font-size: 1.75vmax;
+    padding: 1% 3%;
+    margin:0% 1%;
+    border-radius: 3vmax;
+    border:none;
+    transition: all 0.45s ease-in-out;
+    color: red;
+    background:white;
+    cursor: pointer;
+    animation: slideRight 1.4s ease-in-out;
+  }
+  .grids button:hover{
+    transform: scale(1.1);
+  }
+  .grids button:hover>a{
+     text-decoration: underline;
+  }
+  .grids a{
+    text-decoration: none;
+    color:red;
+    transition: all 0.45s ease-in-out;
+  }
+  .fontIcon{
+      font-size: 15vmax;
+      position: fixed;
+      top:30vh;
+      left:80vw;
+      z-index: 3;
+      transform: rotate(0deg);
+      filter:brightness(105%);
+      animation: fall-left 1.4s ease-in-out;
+  }
+  .cloudIcon{
+    font-size: 15vmax;
+    position: fixed;
+    top:5vh;
+    left:70vw;
+    transform: rotateY(180deg);
+    filter:brightness(136%);
+    animation: fall-left 1.45s ease-in-out;
+  }
+  .callIcon{
+    font-size: 6vmax;
+    position: fixed;
+    top:25vh;
+    left:76vw;
+    transform: rotateY(180deg);
+    filter:brightness(136%);
+    z-index: 3;
+    animation: fall-left 1.5s ease-in-out;
+  }
+  .messagePopper{
+      position: fixed;
+      width:50vw;
+      color:white;
+      top:0;
+      font-family: 'Vujahday Script', cursive;
+      font-size: 2vmax;
+      text-transform: uppercase;
+      text-align: center;
+      padding: 5%;
+      transition: all 0.5s ease-in-out;
+      border-radius: 2vmax;
+      border:3px solid white;
+      z-index: 6;
+  }
+  @keyframes fall-left {
+    from{
+        margin-left: 100%;
+    }
+    to{
+        margin-left: 0%;
+    }
+}
+
+
+  /* font-family: 'Akronim', cursive;
+font-family: 'Fredoka', sans-serif;
+font-family: 'Rampart One', cursive;
+font-family: 'Vujahday Script', cursive;
+font-family: 'Zen Tokyo Zoo', cursive; */
+
+  @media only screen and (max-width: 1500px){
+    .grids button{
+        font-size: 2vmax;
+    }
+    .contactLinks{
+        display: flex;
+        width:55%;
+    }
+    .quote{
+        font-size: 2.75vmax;
+    }
+    .formHeading{
+        font-size: 3.5vmax;
+    }
+    .inputs,.textArea,.submitButton{
+        width:22.5vw;
+    }
+    .submitButton{
+        font-size: 1.9vmax;
+    }
+    .fontIcon{
+        top:36vh
+    }
+    .cloudIcon{
+        top:15vh
+    }
+    .callIcon{
+        top:32vh;
+    }
+  }
+  @media only screen and (max-width: 1300px){
+    .grids button{
+        font-size: 2.25vmax;
+    }
+    .headingMe{
+        font-size: 4vmax;
+        }
+    .contactLinks{
+        display: flex;
+        width:60%;
+    }
+    .quote{
+        font-size: 3vmax;
+    }
+    .formHeading{
+        font-size: 3.75vmax;
+    }
+    .inputs,.textArea,.submitButton{
+        width:25vw;
+    }
+    .submitButton{
+        font-size: 2vmax;
+    }
+    .fontIcon{
+        top:42vh
+    }
+    .cloudIcon{
+        top:25vh
+    }
+    .callIcon{
+        top:38.5vh;
+    }
+  }
+  @media only screen and (max-width: 1100px){
+    .grids button{
+        font-size: 2.5vmax;
+    }
+    .headingMe{
+        font-size: 4.5vmax;
+        }
+    .contactLinks{
+        display: flex;
+        width:65%;
+    }
+    .quote{
+        font-size: 3.5vmax;
+    }
+    .formHeading{
+        font-size: 4vmax;
+    }
+    .inputs,.textArea,.submitButton{
+        width:26vw;
+    }
+    .submitButton{
+        font-size: 2.25vmax;
+    }
+    .fontIcon{
+        top:50vh
+    }
+    .cloudIcon{
+        top:36vh
+    }
+    .callIcon{
+        top:48vh;
+    }
+  }
+  @media only screen and (max-width: 900px){
+
+    .grids button{
+        font-size: 3vmax;
+    }
+    .headingMe{
+        font-size: 5vmax;
+        }
+    .contactLinks{
+        display: flex;
+        width:65%;
+    }
+    .quote{
+        font-size: 4vmax;
+    }
+    .formHeading{
+        font-size: 5vmax;
+    }
+    .inputs,.textArea,.submitButton{
+        width:42vw;
+        font-size: larger;
+    }
+    .submitButton{
+        font-size: 2.5vmax;
+    }
+    .fontIcon{
+        top:60vh
+    }
+    .cloudIcon{
+        top:46vh;
+        left:66vw;
+    }
+    .callIcon{
+        top:58vh;
+        left:74vw;
+    }
+  }
+  @media only screen and (max-width: 600px){
+  
+    .grids button{
+        font-size: 3vmax;
+    }
+    .headingMe{
+        font-size: 4.25vmax;
+        }
+    .contactLinks{
+        display: flex;
+        width:95%;
+    }
+    .quote{
+        font-size: 3.5vmax;
+    }
+    /* .formHeading{
+        font-size: 4vmax;
+    }
+    .inputs,.textArea,.submitButton{
+        width:26vw;
+    }
+    .submitButton{
+        font-size: 2.25vmax;
+    } */
+    /* .inputs,.textArea,.submitButton{
+        font-size: larger;
+    } */
+    .fontIcon{
+        top:75vh;
+        left:75vw;
+    }
+    .cloudIcon{
+        top:60vh;
+        left:60vw;
+    }
+    .callIcon{
+        top:72vh;
+        left:72vw
+    }
+  }
+  @media only screen and (max-width: 400px){
+    .grids button{
+        font-size: 2.75vmax;
+    }
+    .headingMe{
+        font-size: 4vmax;
+        }
+    .contactLinks{
+        display: flex;
+        width:100%;
+    }
+    .quote{
+        font-size: 3.25vmax;
+    }
+    /* .formHeading{
+        font-size: 4vmax;
+    }
+    .inputs,.textArea,.submitButton{
+        width:26vw;
+    }
+    .submitButton{
+        font-size: 2.25vmax;
+    } */
+    /* .inputs,.textArea,.submitButton{
+        font-size: larger;
+    } */
+    /* .fontIcon{
+        top:75vh;
+        left:55vw;
+    }
+    .cloudIcon{
+        top:60vh;
+        left:40vw;
+    }
+    .callIcon{
+        top:72vh;
+        left:52vw
+    } */
+    .fontIcon,
+    .callIcon,
+    .cloudIcon{
+        display: none;
+    }
+  }
