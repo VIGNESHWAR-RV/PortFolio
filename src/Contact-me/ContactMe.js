@@ -170,7 +170,7 @@ return(
                     <h1 className="headingMe"><span>{"<"}</span>Hire Me<span>{"/>"}</span></h1>
                     <div className="contactLinks">
                         <button>
-                        <a href="#" rel="noreferrer" target="_blank" title="Resume">
+                        <a href="https://drive.google.com/file/d/1FzFqeKEtgnprgHbqocx9CGkfFI7O3dla/view?usp=sharing" rel="noreferrer" target="_blank" title="Resume">
                         📜 Resume 
                         </a>
                         </button>
