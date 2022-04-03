@@ -116,7 +116,6 @@ animation: slideLeft 1.4s ease-in-out;
     color: red;
     background:white;
     cursor: pointer;
-    animation: slideRight 1.4s ease-in-out;
   }
   .grids button:hover{
     transform: scale(1.1);
