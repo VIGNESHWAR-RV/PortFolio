@@ -45,7 +45,6 @@
     color:black;
     border-radius: 0.5rem;
     transition: all 0.4s ease-in-out;
-    animation: fall-in 0.55s ease-in-out;
 }
 .skillsUsed>span:hover{
     color:white;
@@ -90,7 +89,6 @@
     color:black;
     border-radius: 0.5rem;
     transition: all 0.4s ease-in-out;
-    animation: fall-in 0.55s ease-in-out;
 }
 .concepts>span:hover{
     color:white;
