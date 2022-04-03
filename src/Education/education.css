@@ -113,6 +113,7 @@
     margin-top: 1%;
     align-self: flex-start;
     z-index:4;
+    background:red;
 }
 .lineDiv hr{
     border:3px solid white;
