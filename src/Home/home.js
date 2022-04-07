@@ -8,7 +8,7 @@ export function Home({setStyle,setPages}){
 
    const navigate = useNavigate();
 
-    const animate = useRef({marginTop:"100vh"
+    const animate = useRef({marginTop:"100vh",opacity:"0"
                           });
     
   useEffect(()=>{
@@ -34,10 +34,10 @@ export function Home({setStyle,setPages}){
    const handleClick=()=>{
        const pages = ["/","/Education","/Skills","/Projects","/Contact-me"]
       setPages(pages);
-      setStyle({marginTop:"0vh"});
+      setStyle({marginTop:"0vh",opacity:"1"});
       return setTimeout(()=>{
         navigate(pages[pages.length - 1]);
-    },620);
+    },820);
    }
     
     return(

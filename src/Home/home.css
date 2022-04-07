@@ -2,7 +2,7 @@
 #home{
   height:100vh;
   width:100%;
-  background:red;
+  background:transparent;
   transition: all 0.45s ease-in-out;
   z-index: 2;
   transform-style: preserve-3d;
@@ -81,7 +81,7 @@
   width:100%;
   height: 100%;
   transition: all 0.3s ease-in-out;
-  background:red;
+  background:transparent;
   overflow: hidden;
   display: grid;
   place-items: center;
@@ -98,11 +98,11 @@
   object-fit:cover;
   object-position:0%;
   transition: all 1s ease-in-out;
-  animation: image-enter 1.8s ease;
+  animation: image-enter 3.6s ease;
 }
 @keyframes image-enter {
   from{
-    opacity:0;
+    opacity: 0;
     /* transform: translateX(100%); */
   }
   to{
@@ -208,6 +208,36 @@
     object-position:15%;
   }
 }
+@media only screen and (max-height: 900px){
+ 
+  .title{
+    padding-top: 3%;
+  }
+  .title h1{
+    font-size: 5.5vmin;
+   }
+   .name{
+    font-size: 4vmax;
+  }
+   .About h2,.About h2>span{
+    font-size: 5.5vmin;
+  }
+  .About p{
+    font-size: 3.25vmin;
+  }
+  .role{
+    font-size: 4vmin;
+ }
+ .About button{
+  font-size: 3.6vmin;
+}
+ .myImage{
+   object-position:0%;
+ }
+ .titleAndImage{
+  grid-template-columns: 2.5fr 6fr;
+}
+}
 @media only screen and (max-width: 1300px){
   .title h1{
     font-size: 6vmax;
@@ -225,10 +255,10 @@
     font-size: 3.5vmin;
   }
   .About p{
-    font-size: 3vmin;
+    font-size: 2.75vmin;
   }
   .About button{
-    font-size: 4vmin;
+    font-size: 3.5vmin;
   }
   .myImage{
     object-position:36%;
@@ -249,6 +279,7 @@
     object-position:44%;
   }
 }
+
 @media only screen and (max-width: 900px){
   .titleAndImage{
     grid-template-columns: 1fr;
@@ -280,17 +311,17 @@
 @media only screen and (max-width: 600px){
 
   .title h1{
-    font-size: 5vw;
+    font-size: 6vw;
    }
    .name{
-    font-size: 8.5vw;
+    font-size: 8vw;
     
   }
    .About h2,.About h2>span{
-    font-size: 6vw;
+    font-size: 8vw;
   }
   .About p{
-    font-size: 3vw;
+    font-size: 5vw;
   }
   .About span{
     font-size: 4vw;
@@ -299,11 +330,10 @@
     font-size: 3vmax;
  }
  .About button{
-  font-size: 2.5vmax;
+  font-size: 3vmax;
 } 
  
 }
-
 
   /* font-family: 'Akronim', cursive;
 font-family: 'Fredoka', sans-serif;

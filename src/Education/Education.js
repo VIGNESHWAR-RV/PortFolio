@@ -2,21 +2,21 @@ import { useEffect, useRef, useState } from "react";
 import "./education.css";
 import Velammal from "../images/Educational-Images/VELAMMAL.webp";
 import Irtt from "../images/Educational-Images/IRTT.webp";
-import Guvi from "../images/Educational-Images/GUVI.webp";
+// import Guvi from "../images/Educational-Images/GUVI.webp";
 
 export function Education({style,setStyle}){
 
-    const animate = useRef({marginTop:"100vh"
+    const animate = useRef({marginTop:"100vh",opacity:"0"
                           });
     
     const defaultTimeline = useRef();
 
-  useEffect(()=>{
-     defaultTimeline.current.scrollTo({
-       top:466,
-       behavior:"smooth"
-     })
-  },[]);
+  // useEffect(()=>{
+  //    defaultTimeline.current.scrollTo({
+  //      top:466,
+  //      behavior:"smooth"
+  //    })
+  // },[]);
    
   useEffect(()=>{
     setTimeout(()=>{
@@ -24,9 +24,9 @@ export function Education({style,setStyle}){
    },100);
   },[setStyle,animate]);
 
-    const [display,setDisplay] = useState({icon : "👨‍💻",
-                                           interest:["Web Development","AI🤖"],
-                                           hobby:["Coding💻","Singing🎶"]
+    const [display,setDisplay] = useState({icon:"🙋",
+                                           interest:["Botany","Physics"],
+                                           hobby:["VolleyBall🏐","Chess♟️"]
                                           });
     const [selected,setSelected] = useState("course");
     const handleDisplay = (e)=>{
@@ -107,7 +107,7 @@ export function Education({style,setStyle}){
                      <h2 title="college">👨‍🎓</h2>
                      <img src={Irtt} loading="eager" title="college" alt="IRTT College"></img>
                  </div>
-                 <div className="Event" title="course" onMouseEnter={handleDisplay}>
+                 {/* <div className="Event" title="course" onMouseEnter={handleDisplay}>
                      <div className="year" title="course">
                        <h1 title="course">2021-present</h1>
                        <p title="course">pursued <span title="course">MERN DEVELOPMENT</span> due to my <span title="course">LOVE </span>
@@ -115,7 +115,7 @@ export function Education({style,setStyle}){
                      </div>
                      <h2 title="course">👨‍💻</h2>
                      <img className="guvi" loading="eager" title="course" src={Guvi} alt="GUVI MERN STACK PROGRAMME"></img>
-                 </div>
+                 </div> */}
                  <div className="Event">
                      <div className="year">
                        <h1>Future</h1>

@@ -15,7 +15,7 @@ import Postman from "../images/Skill-Images/Postman.webp";
 
 export function Skills({setStyle}){
 
-    const animate = useRef({marginTop:"100vh"
+    const animate = useRef({marginTop:"100vh",opacity:"0"
                             //boxShadow:"-4vh -3.25vh 0vh 1.5vh rgb(207, 2, 2)"
                            });
     

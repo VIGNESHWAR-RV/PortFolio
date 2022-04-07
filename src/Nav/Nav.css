@@ -5,8 +5,8 @@
     top: 84%;
     height:680px;
     width:1200px;
-    background:red;
-    border:3px solid black;
+    background:rgba(0, 0, 0, 0.866);
+    border:5px solid black;
     border-radius: 100%;
     transition: all 0.45s ease-in-out;
     display: grid;
@@ -53,7 +53,7 @@
 }
 
 .innerNav{
-    background: white;
+    background:red;
     width:850px;
     height:470px;
     position:relative;
@@ -68,11 +68,12 @@
         display: none;
     }
     .navBar{
-        top:90%;
-        height:10%;
+        top:85%;
+        height:15%;
         width:100%;
         border-radius: 0%;
-        border-top-left-radius: 50%;
+        border:5px solid black;
+        border-top-left-radius: 70%;
         border-top-right-radius: 50%;
     }
     .navButtons{
@@ -81,10 +82,10 @@
         border-radius: 0%;
         display: flex;
         align-items: center;
-        margin: 1% 1%;
+        margin: 1.75% 1%;
     }
     .navButtons button{
-     font-size: 5vmin;
+     font-size: 6vmin;
     }
     .navButtons button:first-child, 
     .navButtons button:last-child{

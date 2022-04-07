@@ -249,6 +249,7 @@
     }
 }
 
+
   @media only screen and (max-width: 1500px){
     .favourites>p{
         font-size: 2vmax;
@@ -309,6 +310,46 @@
         font-size: 2vmax;
     }
   }
+
+  @media only screen and (max-height: 900px){
+    .showCaseAndGrid{
+        grid-template-columns: 3fr 6fr;
+    }
+    .favourites{
+        height: 30%;
+    }
+    .favourites>h1{
+      font-size: 4vmin;
+    }
+    .favourites>h2{
+        font-size: 4vmin;
+    }
+    .favourites>p{
+        font-size: 3.6vmin;
+    }
+    .knowOuter>h2{
+        font-size: 5vmin;
+    }
+    
+    .skillInfo{
+        display:none;
+    }
+    .knowInner{
+        font-size: 2vmax;
+    }
+    .showImage>img{
+        height:50%;
+    }
+    .showImage>img:nth-child(1){
+        align-self:flex-start;
+        margin-top:4%;
+    }
+    .showImage{
+         width:100%;
+         height: 20%;
+    }
+  }
+
   @media only screen and (max-width: 900px){
     .showCaseAndGrid{
         grid-template-columns: 1fr;
@@ -331,6 +372,7 @@
         margin-top: 2%;
     }
   }
+  
   @media only screen and (max-width: 600px){
   
     .show{
@@ -362,20 +404,24 @@
    
  
   }
+
   @media only screen and (max-width: 400px){
 
     .show{
         margin-left: 2%;
         width:70%;
     }
+    .favourites{
+        height: 25%;
+    }
     .favourites>p{
-        font-size: 2vmax;
+        font-size: 5vmin;
     }
     .favourites>h1{
-      font-size: 2.5vmax;
+      font-size: 6vmin;
     }
     .favourites>h2{
-        font-size: 2.25vmax;
+        font-size: 6vmin;
     }
     .knowOuter>h2{
         font-size: 4vmax;
@@ -386,6 +432,17 @@
     .knowInner{
         font-size: 2.5vmax;
         width:60vw;
+    }
+    .showImage>img{
+        height:100%;
+    }
+    .showImage>img:nth-child(1){
+        align-self:flex-start;
+        margin-top:3%;
+    }
+    .showImage{
+         width:100%;
+         height: 25%;
     }
 
   }

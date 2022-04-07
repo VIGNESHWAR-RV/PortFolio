@@ -157,6 +157,27 @@ animation: slideLeft 1.4s ease-in-out;
     z-index: 3;
     animation: fall-left 1.5s ease-in-out;
   }
+  
+  /* .contactImage{
+      position: absolute;
+      top:35%;
+      right:0%;
+      width:36%;
+      height:80%;
+      object-fit: cover;
+      animation: fall-image 1.4s ease-in-out;
+  }
+  @keyframes fall-image {
+      from{
+          right:-50%;
+      }
+      85%{
+         right:5%;
+      }
+      to{
+          right:0%;
+      }
+  } */
   .messagePopper{
       position: fixed;
       width:50vw;
@@ -217,6 +238,30 @@ font-family: 'Zen Tokyo Zoo', cursive; */
     .callIcon{
         top:32vh;
     }
+    /* .contactImage{
+
+    } */
+  }
+  @media only screen and (max-height: 900px){
+    .formHeading{
+        margin-top: 3vh;
+        margin-bottom: 1vh;
+    }
+    .contactInfo{
+        margin-top: 6vh;
+    }
+    .fontIcon{
+        top:30vh
+    }
+    .cloudIcon{
+        top:7vh;
+        left:70vw;
+    }
+    .callIcon{
+        top:27vh;
+        left:75.5vw;
+    }
+
   }
   @media only screen and (max-width: 1300px){
     .grids button{
@@ -248,7 +293,7 @@ font-family: 'Zen Tokyo Zoo', cursive; */
         top:25vh
     }
     .callIcon{
-        top:38.5vh;
+        top:43vh;
     }
   }
   @media only screen and (max-width: 1100px){
@@ -281,9 +326,10 @@ font-family: 'Zen Tokyo Zoo', cursive; */
         top:36vh
     }
     .callIcon{
-        top:48vh;
+        top:50vh;
     }
   }
+ 
   @media only screen and (max-width: 900px){
 
     .grids button{
@@ -318,8 +364,14 @@ font-family: 'Zen Tokyo Zoo', cursive; */
     }
     .callIcon{
         top:58vh;
-        left:74vw;
+        left:72vw;
     }
+    /* .contactImage{
+        
+        top:40%;
+        width:45%;
+        height:60%;
+    } */
   }
   @media only screen and (max-width: 600px){
   
@@ -332,6 +384,8 @@ font-family: 'Zen Tokyo Zoo', cursive; */
     .contactLinks{
         display: flex;
         width:95%;
+        justify-content: flex-start;
+        margin-left: 10%;
     }
     .quote{
         font-size: 3.5vmax;
@@ -349,17 +403,22 @@ font-family: 'Zen Tokyo Zoo', cursive; */
         font-size: larger;
     } */
     .fontIcon{
-        top:75vh;
+        top:65vh;
         left:75vw;
     }
     .cloudIcon{
-        top:60vh;
+        top:50vh;
         left:60vw;
     }
     .callIcon{
-        top:72vh;
-        left:72vw
+        top:62vh;
+        left:68vw
     }
+    /* .contactImage{
+        top:50%;
+        width:50%;
+        height:60%
+    } */
   }
   @media only screen and (max-width: 400px){
     .grids button{
@@ -399,9 +458,28 @@ font-family: 'Zen Tokyo Zoo', cursive; */
         top:72vh;
         left:52vw
     } */
-    .fontIcon,
-    .callIcon,
+    .fontIcon{
+        top:65vh;
+        left:70vw;
+    }
     .cloudIcon{
-        display: none;
+        top:50vh;
+        left:50vw;
+    }
+    .callIcon{
+        top:62vh;
+        left:62vw
+    }
+    /* .contactImage{
+        top:45%;
+        width:80%;
+        height:80%
+    } */
+  }
+  @media only screen and (max-width: 400px){
+    .fontIcon,
+    .cloudIcon,
+    .callIcon{
+        display:none;
     }
   }

@@ -96,7 +96,7 @@
 .projectLinks>button{
     border:none;
     padding:2%;
-    margin:3%;
+    margin:3% 2%;
     border-radius: 3vmax;
     background:red;
     border: 3px double white;
@@ -110,7 +110,7 @@
 .projectLinks>button:hover a{
     font-size: 2vmax;
 }
-.projectLinks>button:hover a::after{
+.projectLinks>button:nth-child(1) a::after{
     content:"🔗";
 }
 .projectLinks a{
@@ -249,6 +249,62 @@
         font-size: 2.5vmax;
     }
   }
+  @media only screen and (max-height: 900px){  
+    .projectInfo{
+        align-content: flex-start;
+    }
+    .projectInfo>h1{
+        font-size: 4vmin;
+    }
+    .projectInfo>h3{
+        margin-top:0%;
+        font-size:2.25vmin;
+        color:black;
+    }
+    .skillsUsed{
+        height:27.5vh;
+        justify-self: stretch;
+    }
+    .skillsUsed:hover{
+        height:27.5vh;
+    }
+    .skillsUsed>h1{
+        font-size: 4.5vmin;
+        color:red;
+    }
+    .skillsUsed span{
+        font-size: 2.5vmin;
+        color:white;
+        background:black
+    }
+    .concepts{
+        height:27.5vh;
+        justify-self: stretch;
+    }
+    .cooncepts:hover{
+        height:27.5vh;
+    }
+    .concepts>h1{
+        font-size: 4.5vmin;
+        color:red;
+    }
+    .concepts span{
+        font-size: 2.5vmin;
+        color:white;
+        background:black
+    }
+    .projectLinks a{
+        font-size: 3.6vmin;
+    }
+    .projectLinks>button:hover a{  
+        font-size: 1.75vmax;
+    }
+    .projectLinks>button{
+        border:none;
+        padding:2%;
+        margin:3% 1%;
+    }
+  }
   @media only screen and (max-width: 900px){  
     .projectInfo>h1{
         font-size: 4vmax;
@@ -284,17 +340,24 @@
     .onGoing,
     .completed1,
     .completed2{
-         height:20vh;
+         height:25vh;
      }
     
      .onGoing >img,
      .completed1 > img,
      .completed2>img{
-          height:18vh;
+          height:22vh;
           object-position: top;
      }
+     .fullStack{
+        font-size: 4vmin;
+        margin-left: 3%;
+    }
   }
   @media only screen and (max-width: 600px){
+    .projectInfo{
+        align-content: center;
+    }
     .projectInfo>h1{
         font-size: 4vmax;
     }

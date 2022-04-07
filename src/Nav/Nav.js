@@ -24,12 +24,12 @@ export function Nav({setStyle,pages,setPages}){
         currentPage = [...currentPage,...sliced];
         
         setPages(currentPage);
-        setStyle({marginTop:"0vh"});
+        setStyle({marginTop:"0vh",opacity:"1"});
         
         setTimeout(()=>{
             navigate(currentPage[currentPage.length - 1]);
             
-        },620);
+        },820);
         return;
      }
     };

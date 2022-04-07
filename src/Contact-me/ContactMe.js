@@ -1,10 +1,11 @@
 
 import { useEffect, useRef, useState } from "react";
 import "./contactMe.css";
+// import contact from "../images/contact.svg";
 
 export function ContactMe({style,setStyle}){
 
-    const animate = useRef({marginTop:"100vh"
+    const animate = useRef({marginTop:"100vh",opacity:"0"
                             // boxShadow:"-4vh -3.25vh 0vh 1.5vh rgb(207, 2, 2)"
                           });
    
@@ -130,6 +131,7 @@ return(
           <h1 className="fontIcon">🧍‍♂️</h1>
           <h1 className="cloudIcon">💭</h1>
           <h1 className="callIcon">📞</h1>
+          {/* <img className="contactImage" src={contact} alt="contactStill"></img> */}
          <div className="showCaseAndGrid">
             <div className="showCase" title="showCase" style={stylePop} onClick={handleClose}>
                <div className="show">

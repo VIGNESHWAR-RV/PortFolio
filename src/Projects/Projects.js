@@ -11,7 +11,7 @@ import Markdown from "../images/projectImages/MarkDown.webp";
 
 export function Projects({setStyle}){
     
-    const animate = useRef({marginTop:"100vh"
+    const animate = useRef({marginTop:"100vh",opacity:"0"
                           //  boxShadow:"-4vh -3.25vh 0vh 1.5vh rgb(207, 2, 2)"
                         });
 
@@ -178,7 +178,7 @@ const calc = {
                   {(display.head !== undefined)
                     ?
                     <>
-                       <h1>{"<"}{display.head}{"/>"}</h1>
+                       <h1>{"< "}{display.head}{" />"}</h1>
                        {(display.underDev)
                           ?<h3>----🏗️Under Development🚧----</h3>
                           :""}
@@ -195,7 +195,10 @@ const calc = {
                           <a href={display.site} rel="noreferrer" target="_blank">Demo</a>
                         </button>
                         <button>
-                           <a href={display.src} rel="noreferrer" target="_blank">Source</a>
+                           <a href={display.src} rel="noreferrer" target="_blank">FE🎨</a>
+                        </button>
+                        <button>
+                           <a href={display.src} rel="noreferrer" target="_blank">BE🛠️</a>
                         </button>
                        </div>
                      </>
@@ -205,7 +208,7 @@ const calc = {
              </div>
              <div className="grid">
              <h1 className="skillTitle">{"<"}Projects{"/>"}</h1>
-             <h1 className="fullStack">Full Stack Apps</h1>
+             <h1 className="fullStack">{"< "}Full Stack Apps{" />"}</h1>
               <div className="onGoing">
                 {(onGoing.map((project,index)=>
                          <img className="project"
@@ -230,7 +233,7 @@ const calc = {
                               loading="eager">
                          </img>))}
               </div>
-              <h1  className="fullStack">FrontEnd Practises</h1>
+              <h1  className="fullStack">{"< "}FrontEnd Practises{" />"}</h1>
               <div className="completed2">
                 {(completed2.map((project,index)=>
                         <img className="project"

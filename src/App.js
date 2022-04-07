@@ -11,7 +11,7 @@ import { Projects } from './Projects/Projects';
 
 function App() {
 
-  const [style,setStyle] = useState({marginTop:"0vh"});
+  const [style,setStyle] = useState({marginTop:"0vh",opacity:"1"});
 
   const [pages,setPages] = useState(["/Education","/Skills","/Projects","/Contact-me","/"]);
 
@@ -31,22 +31,22 @@ function App() {
       currentPage.push(currentPage.shift());
       //console.log(currentPage);
        setPages(currentPage);
-       setStyle({marginTop:"0vh"});
+       setStyle({marginTop:"0vh",opacity:"1"});
  
      return setTimeout(()=>{
             navigate(currentPage[currentPage.length - 1]);
-        },620); 
+        },820); 
     }
     else if(e.key === "ArrowUp" || e.key === "ArrowLeft"){
       const currentPage = [...pages];
       currentPage.unshift(currentPage.pop());
       //console.log(currentPage);
       setPages(currentPage);
-      setStyle({marginTop:"0vh"});
+      setStyle({marginTop:"0vh",opacity:"1"});
  
      return setTimeout(()=>{
             navigate(currentPage[currentPage.length - 1]);
-        },620); 
+        },820); 
     }
 
   }
