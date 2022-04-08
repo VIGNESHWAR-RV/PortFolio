@@ -39,10 +39,10 @@
 .skillsUsed>span{
     margin:1%;
     padding:1%;
-    background:red;
+    background:black;
     font-family: 'Rampart One', cursive;
     font-size: 1.1vmax;
-    color:black;
+    color:white;
     border-radius: 0.5rem;
     transition: all 0.4s ease-in-out;
 }
@@ -58,6 +58,7 @@
     font-size: 3vmax;
     transition: all 0.4s ease-in-out;
     animation: fall-in 0.4s ease-in-out;
+    color:red;
 }
 .skillsUsed>h1:hover{
     transform: scale(1.2);
@@ -76,6 +77,7 @@
     font-size: 3vmax;
     transition: all 0.4s ease-in-out;
     animation: fall-in 0.4s ease-in-out;
+    color:red;
 }
 .concepts>h1:hover{
     transform: scale(1.03);
@@ -83,10 +85,10 @@
 .concepts>span{
     margin:1%;
     padding:1%;
-    background:red;
+    background:black;
     font-family: 'Rampart One', cursive;
     font-size: 1.1vmax;
-    color:black;
+    color:white;
     border-radius: 0.5rem;
     transition: all 0.4s ease-in-out;
 }

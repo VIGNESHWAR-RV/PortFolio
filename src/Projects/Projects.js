@@ -195,7 +195,7 @@ const calc = {
                           <a href={display.site} rel="noreferrer" target="_blank">Demo</a>
                         </button>
                         <button>
-                           <a href={display.src} rel="noreferrer" target="_blank">
+                           <a href={(display.src.length === 2)?display.src[0]:display.src} rel="noreferrer" target="_blank">
                            {(display.src.length === 2)
                                   ? "FE🎨"
                                   : "Source🗃️"}
@@ -203,7 +203,7 @@ const calc = {
                         </button>
                         {(display.src.length === 2)
                            ?<button>
-                               <a href={display.src} rel="noreferrer" target="_blank">BE🛠️</a>
+                               <a href={display.src[1]} rel="noreferrer" target="_blank">BE🛠️</a>
                              </button>
                            :""}
                         
