@@ -148,7 +148,7 @@ return(
             <div className="grids">
              <div className="contactInfo"> 
                  <h1 className="quote"><q><span>Conversation with like-minded<br/> people are the best</span></q></h1>    
-                    <h1 className="headingMe"><span>{"<"}</span>Friend me<span>{"/>"}</span></h1>
+                    <h1 className="headingMe"><span>{"<"}</span>Friend Me<span>{"/>"}</span></h1>
                     <div className="contactLinks">
                        <button>
                        <a href={
