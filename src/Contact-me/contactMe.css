@@ -1,21 +1,21 @@
 #contactMe{
     height:100vh;
     width:100%;
-    background:red;
+    background:transparent;
     transition: all 0.45s ease-in-out;
     z-index: 2;
 }
 ::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
-    color: red;
+    color: black;
     opacity: 1; /* Firefox */
 }
   
 :-ms-input-placeholder { /* Internet Explorer 10-11 */
-    color: red;
+    color: black;
 }
   
 ::-ms-input-placeholder { /* Microsoft Edge */
-    color: red;
+    color: black;
 }
 
 .formHeading{
@@ -34,7 +34,7 @@
     font-size: 2vmin;
     font-family: 'Fredoka', sans-serif;
     width:20vw;
-    color: red;
+    color: black;
     border-radius: 1vmax;
     border:1px solid black;
 }
@@ -45,7 +45,7 @@
     height:15vh;
     font-size: 2vmin;
     font-family: 'Fredoka', sans-serif;
-    color: red;
+    color: black;
     border-radius: 1vmax;
     border:1px solid black;
 }
@@ -53,18 +53,19 @@
     margin: 3% 0%;
     padding: 1% 2%;
     width: 20vw;
-    color: white;
+    color: black;
     font-family: 'Rampart One', cursive;
     font-size: 1.75vmax;
     text-transform: uppercase;
     border-radius: 3vmax;
     border:none;
     transition: all 0.3s ease-in-out;
-    background:red;
+    background:transparent;
     cursor: pointer;
 }
 .submitButton:hover{
-    color:black;
+    color:white;
+    background:black;
     transform: scale(1.1);
 }
 .grids{
@@ -113,7 +114,7 @@ animation: slideLeft 1.4s ease-in-out;
     border-radius: 3vmax;
     border:none;
     transition: all 0.45s ease-in-out;
-    color: red;
+    color:black;
     background:white;
     cursor: pointer;
   }
@@ -125,7 +126,7 @@ animation: slideLeft 1.4s ease-in-out;
   }
   .grids a{
     text-decoration: none;
-    color:red;
+    color:black;
     transition: all 0.45s ease-in-out;
   }
   .fontIcon{

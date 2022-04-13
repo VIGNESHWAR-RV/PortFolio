@@ -2,7 +2,7 @@
 #education{
     height:100vh;
     width:100%;
-    background:red;
+    background:transparent;
     transition: all 0.45s ease-in-out;
     z-index: 2;
 }
@@ -15,7 +15,7 @@
 .display{
     width:100%;
     height:100vh;
-    background-color: red;
+    background-color:transparent;
     display: grid;
     place-items: center;
 }
@@ -58,9 +58,13 @@
 }
 .interest>p{
     font-family: 'Rampart One', cursive;
+    border-radius:2rem;
+    transition: all 0.4s ease-in-out;
 }
 .interest>p:hover{
-    color:red;
+    background-color:black;
+    color:white;
+    padding: 0% 1%;
 }
 .hobby{
     text-align: center;
@@ -74,20 +78,25 @@
 .hobby h2{
     margin: 3%;
 }
+
 /* .hobby:hover{
     height:40vh;
 } */
 /* .hobby:hover h2{
     color: red;
 } */
-.hobby:hover p{
+/* .hobby:hover p{
     display: block;
-}
+} */
 .hobby>p{
     font-family: 'Rampart One', cursive;
+    transition: all 0.4s ease-in-out;
+    border-radius: 2rem;
 }
 .hobby>p:hover{
-    color:red;
+    background-color:black;
+    color:white;
+    padding:0% 1%;
 }
 
 
@@ -113,7 +122,7 @@
     margin-top: 1%;
     align-self: flex-start;
     z-index:4;
-    background:red;
+    background:transparent;
     transition: all 0.4s ease-in-out;
 }
 .timeline:hover{
@@ -133,7 +142,7 @@
 }
 
 .Events{
-    margin-top: 5%;
+    margin-top: 10%;
     width:100%;
     height:82%;
     overflow-y: auto;
@@ -192,7 +201,7 @@
     color:transparent;
     padding:3%;
     border-radius: 1.5rem;
-    box-shadow: inset 1000px 1000px rgb(255, 0, 0);
+    box-shadow: inset 1000px 1000px transparent;
     text-shadow: 5px 5px 15px rgba(0, 0, 0, 0.226);
     transition: all 0.5s ease-in-out;
 }

@@ -2,7 +2,7 @@
 #projects{
     height:100vh;
     width:100%;
-    background:red;
+    background:transparent;
     transition: all 0.45s ease-in-out;
     z-index: 2;
 }
@@ -20,11 +20,11 @@
     font-family: 'Zen Tokyo Zoo', cursive;
     font-size: 2vmax;
     transition: all 0.4s ease-in-out;
-    color:red;
+    color:black;
     animation: fall-in 0.3s ease-in-out;
 }
 .projectInfo>h3{
-    color:red;
+    color:black;
     font-family: 'Rampart One', cursive;
     animation: fall-in 0.35s ease-in-out;
 }
@@ -39,18 +39,19 @@
 .skillsUsed>span{
     margin:1%;
     padding:1%;
-    background:black;
+    background:transparent;
     font-family: 'Rampart One', cursive;
     font-size: 1.1vmax;
-    color:white;
+    color:black;
     border-radius: 0.5rem;
     transition: all 0.4s ease-in-out;
 }
 .skillsUsed>span:hover{
     color:white;
+    background:black;
 }
 .skillsUsed:hover{
-    height: 25vh;
+    height: 23vh;
 }
 .skillsUsed>h1{
     margin: 3% 0%;
@@ -58,7 +59,7 @@
     font-size: 3vmax;
     transition: all 0.4s ease-in-out;
     animation: fall-in 0.4s ease-in-out;
-    color:red;
+    color:black;
 }
 .skillsUsed>h1:hover{
     transform: scale(1.2);
@@ -77,7 +78,7 @@
     font-size: 3vmax;
     transition: all 0.4s ease-in-out;
     animation: fall-in 0.4s ease-in-out;
-    color:red;
+    color:black;
 }
 .concepts>h1:hover{
     transform: scale(1.03);
@@ -85,22 +86,23 @@
 .concepts>span{
     margin:1%;
     padding:1%;
-    background:black;
+    background:transparent;
     font-family: 'Rampart One', cursive;
     font-size: 1.1vmax;
-    color:white;
+    color:black;
     border-radius: 0.5rem;
     transition: all 0.4s ease-in-out;
 }
 .concepts>span:hover{
     color:white;
+    background-color:black;
 }
 .projectLinks>button{
     border:none;
     padding:2%;
     margin:3% 2%;
     border-radius: 3vmax;
-    background:red;
+    background:black;
     border: 3px double white;
     border-width: 5px;
     transition: all 0.4s ease-in-out;
@@ -159,7 +161,7 @@
     Object-position:left;
     border: 5px solid black;
     border-radius: 1.5vmax;
-    filter: contrast(125%) invert(100%);
+    filter: contrast(125%) invert(100%) grayscale(0.4);
     transition: all 0.6s ease-in-out;
 }
 .completed1>img,.onGoing>img{
@@ -173,7 +175,7 @@
 }
 .project:hover{
     transform: scale(1.03);
-    filter: contrast(66%) ;
+    filter: contrast(126%) invert(0) grayscale(0) brightness(1.25) ;
     Object-position:center;
     z-index: 2;
 }
@@ -272,12 +274,12 @@
     }
     .skillsUsed>h1{
         font-size: 4.5vmin;
-        color:red;
+        /* color:red; */
     }
     .skillsUsed span{
         font-size: 2.5vmin;
-        color:white;
-        background:black
+        /* color:white;
+        background:black */
     }
     .concepts{
         height:27.5vh;
@@ -287,13 +289,13 @@
         height:27.5vh;
     }
     .concepts>h1{
-        font-size: 4.5vmin;
-        color:red;
+        font-size: 4.25vmin;
+        /* color:red; */
     }
     .concepts span{
         font-size: 2.5vmin;
-        color:white;
-        background:black
+        /* color:white;
+        background:black */
     }
     .projectLinks a{
         font-size: 3.6vmin;

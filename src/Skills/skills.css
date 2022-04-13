@@ -3,7 +3,7 @@
 #skills{
     height:100vh;
     width:100%;
-    background:red;
+    background:transparent;
     transition: all 0.45s ease-in-out;
     z-index: 2;
 }
@@ -76,7 +76,7 @@
     width:25vw;
     height:3vh;
     border-radius:3vmax;
-    border:3px solid red;
+    border:3px solid grey;
     text-align: center;
     font-size: 1.6vmax;
     color:black;
@@ -117,8 +117,13 @@
 .favourites>h2:hover{
     transform: scale(1.1);
 }
+.favourites>p{
+    padding:1%;
+    border-radius: 2rem;
+}
 .favourites>p:hover{
-    color:red;
+    color:white;
+    background-color:black;
     transform: scale(1.2);
 }
 .skillInfo>h3{
@@ -155,7 +160,7 @@
     position: sticky;
     /* position: -webkit-sticky; */
     top:0%;
-    background: red;
+    background:rgb(86,86,86);
     margin:0;
     padding: 3% 0%;
     z-index: 3;
@@ -186,6 +191,7 @@
     width:85%;
     padding:2.5vh 0;
     height:18vh;
+    border-radius: 1vmax;
     object-fit:contain;
     transition: all 0.3s ease-in-out;
 }
@@ -212,6 +218,7 @@
     padding:2.5vh 0;
     height:18vh;
     object-fit:contain;
+    border-radius: 1vmax;
     transition: all 0.3s ease-in-out;
 }
 .basics>img:hover,
@@ -220,7 +227,6 @@
 .backEnd2>img:hover{
     background: white;
     /* transform: scale(1.25); */
-    border-radius: 1vmax;
 }
 .space{
     width:100%;

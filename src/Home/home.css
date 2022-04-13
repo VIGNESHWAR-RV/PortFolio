@@ -164,10 +164,10 @@
 .About button:hover{
   background: white;
   transform: scale(1.1);
-  color: red;
+  color: black;
 }
 .About button:hover>a{
-  color:red;
+  color:black;
 }
 .About a{
   text-decoration: none;
@@ -232,7 +232,7 @@
   font-size: 3.6vmin;
 }
  .myImage{
-   object-position:0%;
+   object-position:5%;
  }
  .titleAndImage{
   grid-template-columns: 2.5fr 6fr;
