@@ -95,7 +95,20 @@ font-family: 'Zen Tokyo Zoo', cursive;
 color:black;
 font-size: 3.6vmax;
 margin-left: 1%;
-animation: slideLeft 1.4s ease-in-out;
+animation: slideLeftHeading 1s ease-in-out;
+}
+@keyframes slideLeftHeading{
+
+    from {
+        margin-left: 60%;
+    }
+    85%{
+        margin-left:-5%
+    }
+    100%{
+        margin-left: 1%;
+    }
+     
 }
 .headingMe>span{
     color:white;
@@ -149,7 +162,7 @@ animation: slideLeft 1.4s ease-in-out;
       z-index: 3;
       transform: rotate(0deg);
       filter:brightness(105%);
-      animation: fall-left 1.4s ease-in-out;
+      animation: fall-left 0.7s ease-in-out;
   }
   .cloudIcon{
     font-size: 15vmax;
@@ -158,7 +171,7 @@ animation: slideLeft 1.4s ease-in-out;
     left:70vw;
     transform: rotateY(180deg);
     filter:brightness(136%);
-    animation: fall-left 1.45s ease-in-out;
+    animation: fall-left 0.75s ease-in-out;
   }
   .callIcon{
     font-size: 6vmax;
@@ -168,7 +181,7 @@ animation: slideLeft 1.4s ease-in-out;
     transform: rotateY(180deg);
     filter:brightness(136%);
     z-index: 3;
-    animation: fall-left 1.5s ease-in-out;
+    animation: fall-left 0.8s ease-in-out;
   }
   
   /* .contactImage{
@@ -193,17 +206,19 @@ animation: slideLeft 1.4s ease-in-out;
   } */
   .messagePopper{
       position: fixed;
-      width:50vw;
+      width:25%;
       color:white;
       top:0;
+      left:2%;
       font-family: 'Vujahday Script', cursive;
       font-size: 2vmax;
       text-transform: uppercase;
       text-align: center;
-      padding: 5%;
-      transition: all 0.5s ease-in-out;
+      background-color: rgb(86,86,86);
+      padding: 1%;
+      transition: all 0.2s ease-in-out;
       border-radius: 2vmax;
-      border:3px solid white;
+      /* border:3px solid white; */
       z-index: 6;
   }
   @keyframes fall-left {

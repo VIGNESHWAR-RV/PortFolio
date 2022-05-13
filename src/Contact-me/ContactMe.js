@@ -63,9 +63,9 @@ export function ContactMe({style,setStyle}){
   const [message,setMessage] = useState("");
   
   const notifierStyle = (message === "success")
-                              ? {marginTop:"0vh",background:"green"}
+                              ? {marginTop:"0vh"}
                               : (message === "error")
-                                   ? {marginTop:"0vh",background:"darkred"}
+                                   ? {marginTop:"0vh"}
                                    : {marginTop:"-30vh"}
 
 

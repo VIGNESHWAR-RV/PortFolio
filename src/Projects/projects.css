@@ -177,7 +177,8 @@
 }
 .project:hover{
     transform: scale(1.03);
-    filter: invert(0) grayscale(0) brightness(1.25) ;
+    filter: invert(0) grayscale(0) brightness(1.25);
+    border-radius: 0.5rem;
     Object-position:center;
     z-index: 2;
 }
