@@ -8,13 +8,15 @@ export function Home({setStyle,setPages}){
 
    const navigate = useNavigate();
 
-    const animate = useRef({marginTop:"100vh",opacity:"0"
-                          });
+    const animate = useRef({marginTop:"100vh",opacity:"0"});
     
   useEffect(()=>{
-    setTimeout(()=>{
-       setStyle(animate.current);
-   },100);
+    const handleTimeout=()=>{
+        setTimeout(()=>{
+            setStyle(animate.current);
+        },100);
+    }
+    window.onloadeddata = handleTimeout();
 },[setStyle,animate]);
 
    const [roleArray,setRoleArray] = useState(["MERN Stack Developer👀","Questioner❔ why❔ why not❔","Code Experimentor🧪","Dreamer💤"]);

@@ -35,9 +35,13 @@ export function ContactMe({style,setStyle}){
 
 
   useEffect(()=>{
-    setTimeout(()=>{
-       setStyle(animate.current);
-   },100);
+    const handleTimeout=()=>{
+      setTimeout(()=>{
+          setStyle(animate.current);
+      },100);
+  }
+
+  window.onloadeddata = handleTimeout();
 
    if(window.innerWidth <= 900){
     setStylePop({marginTop:"100vh"});

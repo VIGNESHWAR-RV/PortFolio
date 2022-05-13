@@ -117,6 +117,18 @@ animation: slideLeft 1.4s ease-in-out;
     color:black;
     background:white;
     cursor: pointer;
+    animation: fade-button 1.5s ease-in-out;
+  }
+  @keyframes fade-button {
+      0%{
+          opacity: 0;
+      }
+      50%{
+          opacity: 0;
+      }
+      100%{
+          opacity: 1;
+      }
   }
   .grids button:hover{
     transform: scale(1.1);

@@ -45,9 +45,15 @@ export function Skills({setStyle}){
 
    
 useEffect(()=>{
-    setTimeout(()=>{
-        setStyle(animate.current);
-    },100);
+
+    const handleTimeout=()=>{
+        setTimeout(()=>{
+            setStyle(animate.current);
+        },100);
+    }
+
+    window.onloadeddata = handleTimeout();
+
     if(window.innerWidth <= 900){
         setStylePop({marginTop:"100vh"});
     }else{
@@ -56,7 +62,7 @@ useEffect(()=>{
      window.addEventListener("resize",handleResize);
      return(()=>{window.addEventListener("resize",handleResize)})
  
-},[]);
+},[setStyle]);
 
    const basics = [[HTML,"HTML"],[CSS,"CSS"],[JS,"Javascript"]];
    const frontEnd = [[BootStrap,"BootStrap"],[ReactJs,"ReactJS"],[MUI,"MUI"]];
@@ -231,19 +237,19 @@ const postman = {
                <h1 className="skillTitle">{"<"}Skills{"/>"}</h1>
                <div className="basics">
                   {basics.map((skill,index)=>
-                       <img key={index} loading="eager" src={skill[0]} title={skill[1]} onMouseEnter={handleDisplay} onClick={handleOpen} alt="Skills"></img>)}
+                       <img key={index} loading="lazy" src={skill[0]} title={skill[1]} onMouseEnter={handleDisplay} onClick={handleOpen} alt="Skills"></img>)}
                </div>
                <div className="frontEnd">
                   {frontEnd.map((skill,index)=>
-                       <img key={index} loading="eager" src={skill[0]} title={skill[1]} onMouseEnter={handleDisplay} onClick={handleOpen}  alt="Skills"></img>)}
+                       <img key={index} loading="lazy" src={skill[0]} title={skill[1]} onMouseEnter={handleDisplay} onClick={handleOpen}  alt="Skills"></img>)}
                </div>    
                <div className="backEnd1">
                   {backEnd1.map((skill,index)=>
-                       <img key={index} loading="eager" src={skill[0]} title={skill[1]} onMouseEnter={handleDisplay} onClick={handleOpen}  alt="Skills"></img>)}
+                       <img key={index} loading="lazy" src={skill[0]} title={skill[1]} onMouseEnter={handleDisplay} onClick={handleOpen}  alt="Skills"></img>)}
                </div>
                <div className="backEnd2">
                   {backEnd2.map((skill,index)=>
-                       <img key={index} loading="eager" src={skill[0]} title={skill[1]} onMouseEnter={handleDisplay} onClick={handleOpen}  alt="Skills"></img>)}
+                       <img key={index} loading="lazy" src={skill[0]} title={skill[1]} onMouseEnter={handleDisplay} onClick={handleOpen}  alt="Skills"></img>)}
                </div>
                <div className="space"></div>
            </div>

@@ -159,9 +159,11 @@
     height:30vh;
     object-fit:cover;
     Object-position:left;
-    border: 5px solid black;
-    border-radius: 1.5vmax;
-    filter: contrast(125%) invert(100%) grayscale(0.4);
+    /* border: 5px solid black; */
+    border-radius: 5vmax;
+    border-top-left-radius: 0.5rem;
+    border-bottom-right-radius: 0.5rem;
+    filter: invert(100%) grayscale(0.6);
     transition: all 0.6s ease-in-out;
 }
 .completed1>img,.onGoing>img{
@@ -175,7 +177,7 @@
 }
 .project:hover{
     transform: scale(1.03);
-    filter: contrast(126%) invert(0) grayscale(0) brightness(1.25) ;
+    filter: invert(0) grayscale(0) brightness(1.25) ;
     Object-position:center;
     z-index: 2;
 }

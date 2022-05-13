@@ -19,9 +19,13 @@ export function Education({style,setStyle}){
   // },[]);
    
   useEffect(()=>{
-    setTimeout(()=>{
-       setStyle(animate.current);
-   },100);
+    const handleTimeout=()=>{
+      setTimeout(()=>{
+          setStyle(animate.current);
+      },100);
+  }
+
+  window.onloadeddata = handleTimeout();
   },[setStyle,animate]);
 
     const [display,setDisplay] = useState({icon:"🙋",
