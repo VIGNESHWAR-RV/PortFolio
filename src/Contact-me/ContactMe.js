@@ -3,7 +3,7 @@ import { useEffect, useRef, useState } from "react";
 import "./contactMe.css";
 // import contact from "../images/contact.svg";
 
-export function ContactMe({style,setStyle}){
+ function ContactMe({style,setStyle}){
 
     const animate = useRef({marginTop:"100vh",opacity:"0"
                             // boxShadow:"-4vh -3.25vh 0vh 1.5vh rgb(207, 2, 2)"
@@ -212,3 +212,6 @@ return(
 )
 
 }
+
+
+export default ContactMe;

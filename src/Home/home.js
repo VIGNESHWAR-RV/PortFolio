@@ -4,7 +4,7 @@ import "./home.css";
 import RV from "../images/RV.svg";
 import { useNavigate } from "react-router-dom";
 
-export function Home({setStyle,setPages}){
+ function Home({setStyle,setPages}){
 
    const navigate = useNavigate();
 
@@ -91,3 +91,5 @@ export function Home({setStyle,setPages}){
             </div>
     )
 }
+
+export default Home ;

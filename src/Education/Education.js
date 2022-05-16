@@ -4,7 +4,7 @@ import Velammal from "../images/Educational-Images/VELAMMAL.webp";
 import Irtt from "../images/Educational-Images/IRTT.webp";
 // import Guvi from "../images/Educational-Images/GUVI.webp";
 
-export function Education({style,setStyle}){
+ function Education({style,setStyle}){
 
     const animate = useRef({marginTop:"100vh",opacity:"0"
                           });
@@ -136,3 +136,5 @@ export function Education({style,setStyle}){
         </div>
     )
 }
+
+export default Education;

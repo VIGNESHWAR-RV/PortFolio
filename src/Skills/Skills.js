@@ -13,7 +13,7 @@ import MySql from "../images/Skill-Images/MySql.webp";
 import MongoDB from "../images/Skill-Images/MongoDB.webp";
 import Postman from "../images/Skill-Images/Postman.webp";
 
-export function Skills({setStyle}){
+function Skills({setStyle}){
 
     const animate = useRef({marginTop:"100vh",opacity:"0"
                             //boxShadow:"-4vh -3.25vh 0vh 1.5vh rgb(207, 2, 2)"
@@ -209,7 +209,7 @@ const postman = {
                  <div className="knowOuter">
                    <h2>{"<"}Knowledge{"/>"}</h2>
                    <div className="knowInner"
-                       style={{background:`linear-gradient(to right,rgb(86,86,86) ${display.knowledge}%,white ${display.knowledge+40}%)`}}>
+                       style={{background:`linear-gradient(to right,red ${display.knowledge}%,white ${display.knowledge+40}%)`}}>
                       
                    </div>
                  </div>
@@ -237,19 +237,19 @@ const postman = {
                <h1 className="skillTitle">{"<"}Skills{"/>"}</h1>
                <div className="basics">
                   {basics.map((skill,index)=>
-                       <img key={index} loading="lazy" src={skill[0]} title={skill[1]} onMouseEnter={handleDisplay} onClick={handleOpen} alt="Skills"></img>)}
+                       <img key={index} loading="eager" src={skill[0]} title={skill[1]} onMouseEnter={handleDisplay} onClick={handleOpen} alt="Skills"></img>)}
                </div>
                <div className="frontEnd">
                   {frontEnd.map((skill,index)=>
-                       <img key={index} loading="lazy" src={skill[0]} title={skill[1]} onMouseEnter={handleDisplay} onClick={handleOpen}  alt="Skills"></img>)}
+                       <img key={index} loading="eager" src={skill[0]} title={skill[1]} onMouseEnter={handleDisplay} onClick={handleOpen}  alt="Skills"></img>)}
                </div>    
                <div className="backEnd1">
                   {backEnd1.map((skill,index)=>
-                       <img key={index} loading="lazy" src={skill[0]} title={skill[1]} onMouseEnter={handleDisplay} onClick={handleOpen}  alt="Skills"></img>)}
+                       <img key={index} loading="eager" src={skill[0]} title={skill[1]} onMouseEnter={handleDisplay} onClick={handleOpen}  alt="Skills"></img>)}
                </div>
                <div className="backEnd2">
                   {backEnd2.map((skill,index)=>
-                       <img key={index} loading="lazy" src={skill[0]} title={skill[1]} onMouseEnter={handleDisplay} onClick={handleOpen}  alt="Skills"></img>)}
+                       <img key={index} loading="eager" src={skill[0]} title={skill[1]} onMouseEnter={handleDisplay} onClick={handleOpen}  alt="Skills"></img>)}
                </div>
                <div className="space"></div>
            </div>
@@ -257,3 +257,5 @@ const postman = {
         </div>
     )
 }
+
+export default Skills

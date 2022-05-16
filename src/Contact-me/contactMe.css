@@ -103,7 +103,7 @@ animation: slideLeftHeading 1s ease-in-out;
         margin-left: 60%;
     }
     85%{
-        margin-left:-5%
+        margin-left:-3%
     }
     100%{
         margin-left: 1%;
@@ -130,7 +130,7 @@ animation: slideLeftHeading 1s ease-in-out;
     color:black;
     background:white;
     cursor: pointer;
-    animation: fade-button 1.5s ease-in-out;
+    animation: zoom-in 1s ease-in-out;
   }
   @keyframes fade-button {
       0%{

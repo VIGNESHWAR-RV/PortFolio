@@ -9,7 +9,7 @@ import Security from "../images/projectImages/Security.webp";
 import Todo from "../images/projectImages/Todo.webp";
 import Markdown from "../images/projectImages/MarkDown.webp";
 
-export function Projects({ setStyle }) {
+function Projects({ setStyle }) {
 
   const animate = useRef({
     marginTop: "100vh", opacity: "0"
@@ -231,7 +231,7 @@ export function Projects({ setStyle }) {
                 title={project[1]}
                 onClick={handleOpen}
                 onMouseEnter={handleDisplay}
-                loading="lazy">
+                loading="eager">
               </img>))}
           </div>
           <div className="completed1">
@@ -243,7 +243,7 @@ export function Projects({ setStyle }) {
                 title={project[1]}
                 onClick={handleOpen}
                 onMouseEnter={handleDisplay}
-                loading="lazy">
+                loading="eager">
               </img>))}
           </div>
           <h1 className="fullStack">{"< "}FrontEnd Practises{" />"}</h1>
@@ -256,7 +256,7 @@ export function Projects({ setStyle }) {
                 title={project[1]}
                 onClick={handleOpen}
                 onMouseEnter={handleDisplay}
-                loading="lazy">
+                loading="eager">
               </img>))}
           </div>
           <div className="space"></div>
@@ -265,3 +265,5 @@ export function Projects({ setStyle }) {
     </div>
   )
 }
+
+export default Projects;
