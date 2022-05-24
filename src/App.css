@@ -37,11 +37,38 @@
   /* text-shadow: 1.2vw 1.2vw 1.2vw red; */
   font-family: 'Vujahday Script', cursive;
   font-style:oblique;
+  animation:loading infinite 2.5s ease-in-out;
 }
 .logo_style span{
    color:white;
+
 }
 
+@keyframes loading {
+
+   0%{
+     transform: scale(1.1);
+   }
+   15%{
+     transform: scale(1.25);
+   }
+   30%{
+     transform: scale(1.1);
+   }
+   45%{
+     transform: scale(1.35);
+   }
+   60%{
+     transform: scale(1.1);
+   }
+   75%{
+     transform: scale(1.25);
+   }
+   100%{
+     transform: scale(1.1);
+   }
+  
+}
 /* font-family: 'Akronim', cursive;
 font-family: 'Fredoka', sans-serif;
 font-family: 'Rampart One', cursive;
