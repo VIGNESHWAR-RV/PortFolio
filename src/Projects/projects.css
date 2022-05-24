@@ -188,7 +188,7 @@
     border-top-left-radius: 0.5rem;
     border-bottom-right-radius: 0.5rem;
     filter: invert(0%) grayscale(0);
-    transition: all 0.6s ease-in-out;
+    transition: all 0.4s ease-in-out;
 }
 .completed1>img,.onGoing>img{
     width:97%
@@ -204,6 +204,7 @@
     filter: invert(0) grayscale(0) brightness(1.25);
     border-radius: 0.5rem;
     Object-position:center;
+    box-shadow: 2px 2px 10px 2px white,-2px -2px 10px 2px white;
     z-index: 2;
 }
 

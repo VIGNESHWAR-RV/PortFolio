@@ -64,8 +64,8 @@ function Projects({ setStyle }) {
 
 
   const onGoing = [[CRM, "CRM"], [EBookCart, "EBookCart"]];
-  const completed1 = [[Markdown, "MarkDown Viewer"], [Security, "Security"]];
-  const completed2 = [[Admin, "Admin"], [MovieList, "MovieList And Tic-Tac-Toe Game"], [Todo, "Todo-List"], [Calc, "Calculator"]]
+  const completed1 = [[Markdown, "MarkDown Viewer"], [MovieList, "MovieReview And Tic-Tac-Toe Game"]];
+  const completed2 = [[Admin, "Admin"], [Security, "Security"] , [Todo, "Todo-List"], [Calc, "Calculator"]]
 
 
   const crm = {
@@ -73,7 +73,7 @@ function Projects({ setStyle }) {
     underDev: true,
     skillsUsed: ["React", "MUI", "NodeJS", "ExpressJS", "MongoDB", "Postman"],
     concepts: ["Authentication", "JWT", "Authorization", "Hooks🪝", "RestAPI-CRUD"],
-    site: "https://affectionate-mclean-2fdab2.netlify.app/",
+    site: "https://crm-rv.netlify.app/login",
     src: ["https://github.com/VIGNESHWAR-RV/crm-frontend", "https://github.com/VIGNESHWAR-RV/crm-backend"]
   }
   const BookCart = {
@@ -91,6 +91,13 @@ function Projects({ setStyle }) {
     site: "https://markdown-previewer-with-storage.netlify.app/",
     src: ["https://github.com/VIGNESHWAR-RV/markdown-viewer-frontEnd", "https://github.com/VIGNESHWAR-RV/markdown_viewer_backend"]
   }
+  const movielist = {
+    head: "Movie Review & Tic-Tac-Toe",
+    skillsUsed: ["React", "MUI"],
+    concepts: ["RestAPI-CRUD", "Hooks🪝", "Formik(validations)"],
+    site: "https://movie-review-rv.netlify.app/login",
+    src: ["https://github.com/VIGNESHWAR-RV/my-movielist-with-many-routes", "https://github.com/VIGNESHWAR-RV/nodeJs"]
+  }
   const security = {
     head: "Authentication Flow",
     skillsUsed: ["React", "NodeJS", "ExpressJS", "MongoDB", "Postman"],
@@ -105,13 +112,7 @@ function Projects({ setStyle }) {
     site: "https://sb-admin-2-using-context-by-rv.netlify.app/",
     src: "https://github.com/VIGNESHWAR-RV/sb-admin-2-with-context-api"
   }
-  const movielist = {
-    head: "Movie List & Tic-Tac-Toe",
-    skillsUsed: ["React", "MUI"],
-    concepts: ["RestAPI-CRUD", "Hooks🪝", "Formik(validations)"],
-    site: "https://distracted-fermi-841ee3.netlify.app/",
-    src: "https://github.com/VIGNESHWAR-RV/my-movielist-with-many-routes"
-  }
+  
   const todo = {
     head: "Todo-List",
     skillsUsed: ["React", "CSS"],
@@ -156,7 +157,7 @@ function Projects({ setStyle }) {
     else if (e.target.title === "Admin") {
       toDisplay = admin
     }
-    else if (e.target.title === "MovieList And Tic-Tac-Toe Game") {
+    else if (e.target.title === "MovieReview And Tic-Tac-Toe Game") {
       toDisplay = movielist
     }
     else if (e.target.title === "Todo-List") {
