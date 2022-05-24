@@ -25,7 +25,7 @@ import Irtt from "../images/Educational-Images/IRTT.webp";
       },100);
   }
 
-  window.onloadeddata = handleTimeout();
+  window.onload = handleTimeout();
   },[setStyle,animate]);
 
     const [display,setDisplay] = useState({icon:"🙋",
