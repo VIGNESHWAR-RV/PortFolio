@@ -52,7 +52,7 @@ useEffect(()=>{
         },100);
     }
 
-    window.onload = handleTimeout();
+    document.onloadeddata = handleTimeout();
 
     if(window.innerWidth <= 900){
         setStylePop({marginTop:"100vh"});

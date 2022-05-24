@@ -16,7 +16,7 @@ import { useNavigate } from "react-router-dom";
             setStyle(animate.current);
         },100);
     }
-    window.onload = handleTimeout();
+    document.onloadeddata = handleTimeout();
 },[setStyle,animate]);
 
    const [roleArray,setRoleArray] = useState(["MERN Stack Developer👀","Questioner❔ why❔ why not❔","Code Experimentor🧪","Dreamer💤"]);
