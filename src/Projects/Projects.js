@@ -49,7 +49,7 @@ function Projects({ setStyle }) {
        }, 100);
     }
     
-    document.onloadeddata = handleTimeOut();
+    window.onloadeddata = handleTimeOut();
 
     if (window.innerWidth <= 900) {
       setStylePop({ marginTop: "100vh" });
