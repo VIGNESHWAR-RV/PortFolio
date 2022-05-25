@@ -93,8 +93,8 @@ function Projects({ setStyle }) {
   }
   const movielist = {
     head: "Movie Review & Tic-Tac-Toe",
-    skillsUsed: ["React", "MUI"],
-    concepts: ["RestAPI-CRUD", "Hooks🪝", "Formik(validations)"],
+    skillsUsed: ["React", "MUI", "NodeJS", "MongoDB" , "JWT" ],
+    concepts: ["RestAPI-CRUD","Google-Auth", "Hooks🪝", "Formik(validations)"],
     site: "https://movie-review-rv.netlify.app/login",
     src: ["https://github.com/VIGNESHWAR-RV/my-movielist-with-many-routes", "https://github.com/VIGNESHWAR-RV/nodeJs"]
   }
@@ -230,8 +230,8 @@ function Projects({ setStyle }) {
                 src={project[0]}
                 alt={project[1]}
                 title={project[1]}
-                onClick={handleOpen}
-                onMouseEnter={handleDisplay}
+                onClick={()=>{handleOpen();handleDisplay()}}
+                // onMouseEnter={handledisplay}
                 loading="eager">
               </img>))}
           </div>
@@ -242,8 +242,8 @@ function Projects({ setStyle }) {
                 src={project[0]}
                 alt={project[1]}
                 title={project[1]}
-                onClick={handleOpen}
-                onMouseEnter={handleDisplay}
+                onClick={()=>{handleOpen();handleDisplay()}}
+                  // onMouseEnter={handledisplay}
                 loading="eager">
               </img>))}
           </div>
@@ -255,8 +255,8 @@ function Projects({ setStyle }) {
                 src={project[0]}
                 alt={project[1]}
                 title={project[1]}
-                onClick={handleOpen}
-                onMouseEnter={handleDisplay}
+                onClick={()=>{handleOpen();handleDisplay()}}
+                // onMouseEnter={handleDisplay}
                 loading="eager">
               </img>))}
           </div>
