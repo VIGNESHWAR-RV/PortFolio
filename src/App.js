@@ -1,20 +1,20 @@
-import { useState,useEffect } from 'react';
+import { useState,useEffect, Suspense,lazy } from 'react';
 import {Routes,Route, useNavigate} from "react-router-dom";
 import './App.css';
 import { Nav } from './Nav/Nav';
 
-import Home from './Home/home';
-import Education from './Education/Education';
-import Skills from './Skills/Skills';
-import ContactMe from './Contact-me/ContactMe';
-import Projects from './Projects/Projects';
+// import Home from './Home/home';
+// import Education from './Education/Education';
+// import Skills from './Skills/Skills';
+// import ContactMe from './Contact-me/ContactMe';
+// import Projects from './Projects/Projects';
 
 
-// const LazyHome = lazy(()=> import("./Home/home"));
-// const LazyEducation = lazy(()=> import("./Education/Education"));
-// const LazySkills = lazy(()=>import("./Skills/Skills"));
-// const LazyContactMe = lazy(()=>import("./Contact-me/ContactMe"));
-// const LazyProjects = lazy(()=>import("./Projects/Projects"));
+const LazyHome = lazy(()=> import("./Home/home"));
+const LazyEducation = lazy(()=> import("./Education/Education"));
+const LazySkills = lazy(()=>import("./Skills/Skills"));
+const LazyContactMe = lazy(()=>import("./Contact-me/ContactMe"));
+const LazyProjects = lazy(()=>import("./Projects/Projects"));
 
 function App() {
 
@@ -92,11 +92,21 @@ function App() {
         </div>
         <Nav setStyle={setStyle} pages={pages} setPages={setPages}/>
       <Routes>
-        <Route path="/" element={ <Home style={style} setStyle={setStyle} setPages={setPages}/> }/>
-        <Route path="/Education" element={<Education style={style} setStyle={setStyle}/> }/>
-        <Route path="/Skills" element={<Skills style={style} setStyle={setStyle}/> }/>
-        <Route path="/Projects" element={ <Projects style={style} setStyle={setStyle}/> }/>
-        <Route path="/Contact-me" element={<ContactMe style={style} setStyle={setStyle}/> }/>
+        <Route path="/" element={<Suspense fallback="loading..">
+                                     <LazyHome style={style} setStyle={setStyle} setPages={setPages}/> 
+                                 </Suspense>}/>
+        <Route path="/Education" element={<Suspense fallback="loading..">
+                                              <LazyEducation style={style} setStyle={setStyle}/>
+                                          </Suspense> }/>
+        <Route path="/Skills" element={<Suspense fallback="loading..">
+                                               <LazySkills style={style} setStyle={setStyle}/>
+                                       </Suspense> }/>
+        <Route path="/Projects" element={ <Suspense fallback="loading..">
+                                             <LazyProjects style={style} setStyle={setStyle}/> 
+                                          </Suspense>}/>
+        <Route path="/Contact-me" element={<Suspense fallback="loading..">
+                                                     <LazyContactMe style={style} setStyle={setStyle}/>
+                                           </Suspense> }/>
       </Routes>
      
      
