@@ -176,7 +176,7 @@ return(
                     <h1 className="headingMe"><span>{"<"}</span>Hire Me<span>{"/>"}</span></h1>
                     <div className="contactLinks">
                         <button>
-                        <a href="https://drive.google.com/file/d/1d19hBToZ-A3Q_kp9fTQ5neFUJNt0L5qa/view?usp=sharing" rel="noreferrer" target="_blank" title="Resume">
+                        <a href="https://drive.google.com/file/d/1UHt2Bp_lMljtQANURsE7hcfIpyfqChni/view?usp=sharing" rel="noreferrer" target="_blank" title="Resume">
                         📜 Resume 
                         </a>
                         </button>
