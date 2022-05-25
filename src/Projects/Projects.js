@@ -230,7 +230,7 @@ function Projects({ setStyle }) {
                 src={project[0]}
                 alt={project[1]}
                 title={project[1]}
-                onClick={()=>{handleOpen();handleDisplay()}}
+                onClick={(e)=>{handleOpen();handleDisplay(e)}}
                 // onMouseEnter={handledisplay}
                 loading="eager">
               </img>))}
@@ -242,7 +242,7 @@ function Projects({ setStyle }) {
                 src={project[0]}
                 alt={project[1]}
                 title={project[1]}
-                onClick={()=>{handleOpen();handleDisplay()}}
+                onClick={(e)=>{handleOpen();handleDisplay(e)}}
                   // onMouseEnter={handledisplay}
                 loading="eager">
               </img>))}
@@ -255,7 +255,7 @@ function Projects({ setStyle }) {
                 src={project[0]}
                 alt={project[1]}
                 title={project[1]}
-                onClick={()=>{handleOpen();handleDisplay()}}
+                onClick={(e)=>{handleOpen();handleDisplay(e)}}
                 // onMouseEnter={handleDisplay}
                 loading="eager">
               </img>))}
