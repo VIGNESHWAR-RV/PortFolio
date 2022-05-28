@@ -26,7 +26,6 @@ function Projects({ setStyle }) {
       setStylePop({});
     }
   }
-
   const handleOpen = () => {
     if (window.innerWidth <= 900) {
       return setStylePop({ marginTop: "0vh" })
@@ -73,7 +72,7 @@ function Projects({ setStyle }) {
     underDev: true,
     skillsUsed: ["React", "MUI", "NodeJS", "ExpressJS", "MongoDB", "Postman"],
     concepts: ["Authentication", "JWT", "Authorization", "Hooks🪝", "RestAPI-CRUD"],
-    site: "https://crm-rv.netlify.app/login",
+    site: "https://crm-rv.netlify.app/",
     src: ["https://github.com/VIGNESHWAR-RV/crm-frontend", "https://github.com/VIGNESHWAR-RV/crm-backend"]
   }
   const BookCart = {
@@ -95,7 +94,7 @@ function Projects({ setStyle }) {
     head: "Movie Review & Tic-Tac-Toe",
     skillsUsed: ["React", "MUI", "NodeJS", "MongoDB" , "JWT" ],
     concepts: ["RestAPI-CRUD","Google-Auth", "Hooks🪝", "Formik(validations)"],
-    site: "https://movie-review-rv.netlify.app/login",
+    site: "https://movie-review-rv.netlify.app/",
     src: ["https://github.com/VIGNESHWAR-RV/my-movielist-with-many-routes", "https://github.com/VIGNESHWAR-RV/nodeJs"]
   }
   const security = {
@@ -112,7 +111,6 @@ function Projects({ setStyle }) {
     site: "https://sb-admin-2-using-context-by-rv.netlify.app/",
     src: "https://github.com/VIGNESHWAR-RV/sb-admin-2-with-context-api"
   }
-  
   const todo = {
     head: "Todo-List",
     skillsUsed: ["React", "CSS"],
@@ -137,8 +135,9 @@ function Projects({ setStyle }) {
     }
   }
 
-  const [display, setDisplay] = useState(markdown);
-  const [selected, setSelected] = useState("MarkDown Viewer");
+  const [display, setDisplay] = useState(crm);
+  const [selected, setSelected] = useState("CRM");
+
   const handleDisplay = (e) => {
     if (e.target.title === selected) {
       return;
