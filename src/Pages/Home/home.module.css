@@ -1,0 +1,17 @@
+
+.home_wrapper {
+  height: inherit;
+  width: inherit;
+}
+
+.lang_wrapper {
+    position: relative;
+    top: 15%;
+    /* gap: 0.5rem; */
+}
+
+.lang_text_style {
+    margin: 0;
+    font-size: inherit;
+    line-height: 80px;
+}

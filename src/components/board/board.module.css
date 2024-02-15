@@ -1,0 +1,42 @@
+.blackboard_wrapper {
+    padding: 1rem;
+    height: calc(100% - 2rem);
+    width: calc(100% - 2rem);
+    margin: 0;
+    position: relative;
+    overflow: hidden;
+    /* cursor: none; */
+}
+
+.static_pointer {
+    background-color: var(--primary-color);
+    top: 2.25rem;
+    left: 3.25rem;
+    width: 28px;
+    height: 28px;
+    border-radius: 50%;
+    position: absolute;
+    pointer-events: none;
+    z-index: 10000;
+    transform: translate(-50%, -50%);
+    display: grid;
+    place-items: center;
+    mix-blend-mode: difference;
+    transition: width 0.3s ease-in-out, height 0.3s ease-in-out;
+}
+
+.content_wrapper {
+    position: relative;
+    /* width: 100%; */
+    height: 100%;
+    z-index: 1;
+    overflow-y: auto;
+}
+
+.canvas {
+    position: absolute;
+    top: 0;
+    left: 0;
+    /* width: 100%;
+    height:100%; */
+}

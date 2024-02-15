@@ -1,0 +1,5 @@
+.highLight_wrapper {
+    display: inline-block; 
+    padding: 0.5rem;
+    color: var(--primary-color);
+}

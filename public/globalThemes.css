@@ -1,0 +1,29 @@
+
+@font-face {
+  font-family: 'League Spartan';
+  src: url(../src/fonts/LeagueSpartan-Bold.otf);
+  font-display: swap;
+}
+
+
+
+html { 
+  --league-spartan-font: "League Spartan";
+}
+
+@media (prefers-color-scheme: dark) {
+    html {
+      --primary-color: white;
+      --primary-color-opac-5: rgba(255, 255, 255, 0.5); 
+      --primary-background-color: black;
+    }
+}
+
+
+@media (prefers-color-scheme: light) {
+    html {
+      --primary-color: black;
+      --primary-color-opac-5: rgba(0, 0, 0, 0.5);
+      --primary-background-color: white;
+    }
+}
